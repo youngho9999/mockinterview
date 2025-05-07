@@ -13,7 +13,7 @@ function startInterview() {
 
   sessionStorage.setItem("interviewQuestions", JSON.stringify(questionArray));
 
-  window.location.href = "interview.html";
+  window.location.href = "/interview";
 }
 
 // 각 버튼에 이벤트 리스너 추가
