@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모의 면접 플랫폼 | 자신감 있는 면접, 성공적인 취업!</title>
+    <!-- 타이틀 수정 제안 -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+
+    <!-- 파비콘 추가 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 아이콘 라이브러리 예시 (Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- [신규] 상단 네비게이션 바 -->
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="logo">모의 면접 플랫폼</a>
+        <nav class="main-nav">
+          <!-- <a href="#">서비스 소개</a>
+                <a href="#">FAQ</a>
+                <a href="#" class="btn btn-outline">로그인</a> -->
+        </nav>
+      </div>
+    </header>
+
+    <div class="page-wrapper">
+      <!-- 전체 컨텐츠를 감싸는 래퍼 추가 (선택) -->
+      <section class="hero-section">
+        <!-- hero-section은 header 바깥으로 -->
+        <div class="container">
+          <h1>실전같은 모의 면접으로, 합격 자신감 UP!</h1>
+          <!-- 문구 수정 제안 -->
+          <p>이곳에서 충분히 연습하고, 면접에서 최고의 결과를 만들어내세요.</p>
+          <!-- <button class="btn btn-hero-cta">지금 바로 시작하기</button> -->
+          <!-- 선택적 CTA -->
+        </div>
+      </section>
+
+      <main class="interview-setup container">
+        <!-- main에 container 클래스 직접 적용 또는 내부 div -->
+        <section class="card question-input-section">
+          <!-- 카드 스타일 적용 -->
+          <h2>면접 질문 준비하기</h2>
+          <p>
+            예상되는 면접 질문을 입력하고 연습해보세요. <br />
+            한줄씩 입력하시면 됩니다.
+          </p>
+          <textarea
+            id="interview-question"
+            placeholder="예) 우리 회사에 지원한 동기는 무엇인가요?
+자신의 가장 큰 강점은 무엇이라고 생각하나요?"
+          ></textarea>
+        </section>
+
+        <section class="card interview-type-selection">
+          <!-- 카드 스타일 적용 -->
+          <h2>면접 유형 선택</h2>
+          <p>원하는 면접 유형을 선택하여 실전처럼 연습하세요.</p>
+          <div class="options-wrapper">
+            <button id="video-interview-btn" class="btn btn-primary option-btn">
+              <i class="fas fa-video icon"></i>
+              <!-- 아이콘 변경 예시 -->
+              화상 면접 시작
+            </button>
+            <button id="live-interview-btn" class="btn btn-secondary option-btn">
+              <!-- btn-secondary 스타일 제안 -->
+              <i class="fas fa-microphone-alt icon"></i>
+              <!-- 아이콘 변경 예시 -->
+              실전 면접 시작
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer-main">
+        <!-- 클래스명 변경 (site-header와 구분) -->
+        <div class="container">
+          <p>© 2024 모의 면접 플랫폼. All Rights Reserved.</p>
+          <!-- <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p> -->
+        </div>
+      </footer>
+    </div>
+    <!-- .page-wrapper 끝 -->
+    <script src="index.js"></script>
+  </body>
+</html>
