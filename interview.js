@@ -66,6 +66,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   function handleNextClick() {
     prevButton.disabled = false;
     currentQuestionIndex++;
+    if (currentQuestionIndex >= questions.length) {
+      currentQuestionIndex = questions.length - 1;
+      return;
+    }
     speak();
 
     if (currentQuestionIndex < questions.length) {
@@ -86,6 +90,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   function handlePrevClick() {
     nextButton.disabled = false;
     currentQuestionIndex--;
+    if (currentQuestionIndex < 0) {
+      currentQuestionIndex = 0;
+      return;
+    }
     speak();
 
     if (currentQuestionIndex >= 0) {
